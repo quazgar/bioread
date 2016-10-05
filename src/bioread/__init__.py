@@ -10,6 +10,14 @@
 
 from bioread.readers import AcqReader
 
+raise DeprecationWarning("""
+***** Outdated bioread version! *****
+No need for this version of bioread anymore.
+
+Please use the version from https://github.com/njvack/bioread instead.
+It's fast and memory-efficient (tested with 2GB files).
+*****
+""")
 
 def read_file(filelike, simple_layout=False):
     """
